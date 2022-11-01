@@ -1,5 +1,5 @@
-<p>李琪</p>
-<p>18612544175</p>
+<p><center>李琪</center></p>
+<p<center>>18612544175</center></p>
 <p>北京海淀区大河庄苑</p>
 
 <h3>工作经历</h3>
@@ -17,3 +17,22 @@
       <li> Familiar with Neural Network Layers, and how it works.</li>
     </ul>
 </ul>
+
+{% assign career-profile = site.data.data.career-profile %}
+{% if career-profile %}
+<section class="section summary-section">
+
+  <h2 class="section-title">
+    <span class="fa-stack fa-xs">
+      <i class="fas fa-circle fa-stack-2x"></i>
+      <i class="fas fa-user fa-stack-1x fa-inverse"></i>
+    </span>
+    {{ career-profile.title }}
+  </h2>
+
+  <div class="summary">
+    {{ career-profile.summary | markdownify }}
+  </div><!--//summary-->
+    
+</section><!--//section-->
+{% endif %}
