@@ -21,9 +21,9 @@ else
 
 var language = navigator.browserLanguage;
 
-if (language.indexOf("en") > -1) document.location.href = "en/index.html";
+if (language.indexOf("en") > -1) document.querySelector("#output").innerHTML = navigator.browserLanguage;
 
-else if (language.indexOf(“zh”) > -1) document.location.href ="zh/index.html";
+else if (language.indexOf(“zh”) > -1) document.querySelector("#output").innerHTML = navigator.browserLanguage;
 
 else
 
