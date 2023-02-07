@@ -14,21 +14,10 @@
 <script>
 function myFunc() {
   
-if (navigator.appName =="Netscape")
-
-var language = navigator.language;
-
-else
-
 var language = navigator.browserLanguage;
 
-if (language.indexOf("en") > -1) document.querySelector("#output").innerHTML = navigator.browserLanguage;
+document.querySelector("#output").innerHTML = navigator.browserLanguage;
 
-else if (language.indexOf(“zh”) > -1) document.querySelector("#output").innerHTML = navigator.browserLanguage;
-
-else
-
-document.location.href ="en/index.html";
 }  
 </script>
 
