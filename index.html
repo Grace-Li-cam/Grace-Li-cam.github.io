@@ -1,26 +1,21 @@
 <!DOCTYPE html>
 <html>
+<title>JavaScript 查看浏览器是否在线示例 - 基础教程(nhooo.com)</title>
 
- 	<script>
-  
-    if (navigator.appName =="Netscape")
-    
-    var language = navigator.language;
-    
-    else
-    
-    var language = navigator.browserLanguage;
-    
-    if (language.indexOf("en") > -1) document.location.href = "en/index.html";
-    
-    else if (language.indexOf(“zh”) > -1) document.location.href ="zh/index.html";
-    
-    else
-    
-    document.location.href ="en/index.html";
-  
-  </script>
+<body>
+
+<p>点击按钮显示浏览器语言版本:</p>
+
+<button onclick="myFunc()">点我试试</button>
+
+<p id="output"></p>
+
+<script>
+function myFunc() {
+  var x = navigator.language;
+  document.querySelector("#output").innerHTML = x;
+}
+</script>
+
+</body>
 </html>
-
-
-
