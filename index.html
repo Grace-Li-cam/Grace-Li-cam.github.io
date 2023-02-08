@@ -7,9 +7,9 @@
 
 
 <script>
-  var x = navigator.language;
+  var x = (navigator.language || navigator.browserLanguage);
   if(x = "zh-CN"){
-      alert(document.querySelector("#output").innerHTML);
+      alert(document.querySelector(x).innerHTML);
   }else{
       alert(x);
   }
