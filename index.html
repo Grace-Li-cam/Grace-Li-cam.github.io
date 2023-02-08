@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html>
-
+<title>JavaScript 查看浏览器是否在线示例 - 基础教程(nhooo.com)</title>
 
 <body>
 
+<p>点击按钮显示浏览器语言版本:</p>
 
+<button onclick="myFunc()">点我试试</button>
+
+<p id="output"></p>
 
 <script>
-  var x = (navigator.language || navigator.browserLanguage);
-  if(x = "zh-CN"){
-      document.location.href = "zh/index.html";
-  }else{
-      document.location.href = "en/index.html";
-  }
+function myFunc() {
+  var x = navigator.language;
+  document.querySelector("#output").innerHTML = x;
+}
 </script>
 
 </body>
